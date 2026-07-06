@@ -7,6 +7,8 @@ set -euo pipefail
 
 export DEBIAN_FRONTEND=noninteractive
 if command -v brew; then
+    # TODO this should be handled by hendrikmuhs/ccache-action
+    brew trust aws/tap
     brew install \
          autoconf \
          automake \
