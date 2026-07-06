@@ -19,18 +19,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: macos-15
-            bamboo-call-line:
-              build-type: sstmainline_config_no_mpi
-              compiler-type: none
-              mpi-type: none
-              python-version: 3.9
           - os: macos-26
             bamboo-call-line:
               build-type: sstmainline_config
               compiler-type: none
               mpi-type: none
-              python-version: 3.13
+              python-version: 3.14
           - os: ubuntu-24.04
             bamboo-call-line:
               build-type: sstmainline_config
