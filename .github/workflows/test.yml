@@ -84,7 +84,8 @@ jobs:
             ccache-${{ matrix.os }}-${{ matrix.bamboo-call-line.build-type }}-${{
             matrix.bamboo-call-line.mpi-type }}-${{ matrix.bamboo-call-line.compiler-type
             }}
-          max-size: "4GB"
+          # Maximum actual usage is ~1.5 GB
+          max-size: "3GB"
           verbose: 2
       - name: Clone Spack
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0  # v7.0.0
